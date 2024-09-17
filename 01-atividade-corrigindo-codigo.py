@@ -1,3 +1,7 @@
+import os
+os.system("cls || clear")
+
+
 numero []
 pares[]
 impares[]
@@ -10,6 +14,7 @@ sona total=0
 for i in range(5):
    numero int(input("Digite o (i+1) numero: "))
    numeros.append(numero)
+
    if numero > 0:
       positivos =+ 1
       elif numero <0:
@@ -21,6 +26,7 @@ for i in range(5):
    elser
       impares.append(numero)
       soma impares += numero
+
    soma_total += numero
 
 media_pares = soma_pares / len(pares) if pares  else 0 
