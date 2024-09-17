@@ -1,128 +1,49 @@
-# Variáveis para armazenar os números
-numero1 = int(input("Digite o 1º número: "))
-numero2 = int(input("Digite o 2º número: "))
-numero3 = int(input("Digite o 3º número: "))
-numero4 = int(input("Digite o 4º número: "))
-numero5 = int(input("Digite o 5º número: "))
+numero []
+pares[]
+impares[]
+positivos=0
+negativos=0
+soma pares=0
+soma impares=0
+sona total=0
 
-# Variáveis para armazenar as estatísticas
-quantidade_pares = 0
-quantidade_impares = 0
-quantidade_positivos = 0
-quantidade_negativos = 0
-maior_numero = 0
-menor_numero = 0
-soma_pares = 0
-soma_impares = 0
-soma_geral = 0
+for i in range(5):
+   numero int(input("Digite o (i+1) numero: "))
+   numeros.append(numero)
+   if numero > 0:
+      positivos =+ 1
+      elif numero <0:
+      negativos += 1
 
-# Processando cada número
-if numero1 % 2 == 0:
-    quantidade_pares += 1
-    soma_pares += numero1
-else:
-    quantidade_impares += 1
-    soma_impares += numero1
+   if numero %2 == 0:
+      pares.append(numero)
+      soma_pares += numero
+   elser
+      impares.append(numero)
+      soma impares += numero
+   soma_total += numero
 
-if numero1 < 0:
-    quantidade_negativos += 1
-elif numero1 > 0:
-    quantidade_positivos += 1
+media_pares = soma_pares / len(pares) if pares  else 0 
+media_impares = soma_impares / len(Impares) if impares else 0
+medis_total = sona_total / len(numero) if numero else 0
 
-maior_numero = max(maior_numero, numero1)
-menor_numero = min(menor_numero, numero1)
+numeros.append(numero)
+maior_numero = max(numero)
+menor_numero = min(numero)
 
-soma_geral += numero1
+print("\nResultados:")
 
-# Processando o segundo número
-if numero2 % 2 == 0:
-    quantidade_pares += 1
-    soma_pares += numero2
-else:
-    quantidade_impares += 1
-    soma_impares += numero2
+print("Quantidade de número pares {len(pares)}")
+print("Quantidade de número impares {len(Impares)}")
+print("Quantidade de número positivos: (positivos)")
+print("Quantidade de número negativos: (negativos")
+print("Quantidade total de números inserides {len(numero)}")
+print("Maior número: (maior_numero)") print("Menor número: (menor_numero)")
+print(média dos número pares: {media_pares:/.2f}")
+print("Média dos números impares: {medie_impares: .2f}")
+print("Média de todos os números inseridos {media_total:.2f}")
 
-if numero2 > 0:
-    quantidade_positivos += 1
-elif numero2 < 0:
-    quantidade_negativos += 1
+print("Número lidos na ordem inversa:") 
+for numero in reversed(numero):
+    print(numero)
 
-maior_numero = max(maior_numero, numero2)
-menor_numero = min(menor_numero, numero2)
-
-soma_geral += numero2
-
-# Processando o terceiro número
-if numero3 % 2 == 0:
-    quantidade_pares += 1
-    soma_pares += numero3
-else:
-    quantidade_impares += 1
-    soma_impares += numero3
-
-if numero3 > 0:
-    quantidade_positivos += 1
-elif numero3 < 0:
-    quantidade_negativos += 1
-
-maior_numero = max(maior_numero, numero3)
-menor_numero = min(menor_numero, numero3)
-
-soma_geral += numero3
-
-# Processando o quarto número
-if numero4 % 2 == 0:
-    quantidade_pares += 1
-    soma_pares += numero4
-else:
-    quantidade_impares += 1
-    soma_impares += numero4
-
-if numero4 > 0:
-    quantidade_positivos += 1
-elif numero4 < 0:
-    quantidade_negativos += 1
-
-maior_numero = max(maior_numero, numero4)
-menor_numero = min(menor_numero, numero4)
-
-soma_geral += numero4
-
-# Processando o quinto número
-if numero5 % 2 == 0:
-    quantidade_pares += 1
-    soma_pares += numero5
-else:
-    quantidade_impares += 1
-    soma_impares += numero5
-
-if numero5 > 0:
-    quantidade_positivos += 1
-elif numero5 < 0:
-    quantidade_negativos += 1
-
-maior_numero = max(maior_numero, numero5)
-menor_numero = min(menor_numero, numero5)
-
-soma_geral += numero5
-
-# Calculando as médias
-media_pares = soma_pares / quantidade_pares if quantidade_pares > 0 else 0
-media_impares = soma_impares / quantidade_impares if quantidade_impares > 0 else 0
-media_geral = soma_geral / 5
-
-# Mostrando números na ordem inversa
-numeros_invertidos = [numero5, numero4, numero3, numero2, numero1]
-
-# Imprimindo as estatísticas
-print("\nEstatísticas dos números:")
-print(f"Quantidade de pares: {quantidade_pares}")
-print(f"Quantidade de ímpares: {quantidade_impares}")
-print(f"Quantidade de positivos: {quantidade_positivos}")
-print(f"Quantidade de negativos: {quantidade_negativos}")
-print(f"Maior número: {maior_numero}")
-print(f"Menor número: {menor_numero}")
-print(f"Média dos números pares: {media_pares:.2f}")
-print(f"Média dos números ímpares: {media_impares:.2f}")
-print(f"Média de todos os números: {media_geral:.2f}")
-print(f"Números na ordem inversa: {numeros_invertidos}")
